@@ -1,0 +1,36 @@
+.header {
+	padding-top: 40px;
+	
+	.container {
+		@extend .clfx;
+	}
+
+		&__logo {
+			float: left;
+			width: 179px;
+			img {
+				display: block;
+			}
+
+			@include media-xxsmall{
+				display: block;
+				float: none;
+				margin: 0 auto;
+			}
+		}
+
+		&__soc {
+			float: right;
+			width: 189px;
+			height: 20px;
+			margin-top: 2px;
+
+			background-image: url(../img/tmp/soc.png);
+
+			@include media-xxsmall{
+				display: none;
+			}
+		}
+
+
+}

@@ -1,0 +1,28 @@
+.clfx {
+    *zoom: 1;
+
+	&:before,
+	&:after {
+	    display: table;
+	    content: "";
+	    line-height: 0;
+	}
+	&:after {
+	    clear: both;
+	}
+}
+
+.container {
+	width: $container-medium;
+	margin: 0 auto;
+
+	@include media-xsmall{
+		width: auto;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	@include media-small{
+		width: $container-small;
+	}		
+}

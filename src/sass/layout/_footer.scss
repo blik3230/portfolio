@@ -1,0 +1,49 @@
+.footer {
+	height: 120px;
+	background-color: #444;
+
+	@include media-xsmall{
+		text-align: center;
+	}
+	
+	.container {
+		padding-top: 20px;
+		@extend .clfx;
+	}
+
+		&__copy {
+			float: left;
+
+			color: #ccc;
+			font-size: 11px;
+
+			@include media-xsmall{
+				float: none;
+			}
+		}
+
+		&__cos {
+			margin-top: 5px;
+			float: right;
+
+			@include media-xsmall{
+				float: none;
+				display: inline-block;
+			}
+
+			li {
+				float: left;
+
+				+ li {
+					margin-left: 44px;
+				}
+			}
+
+				a{
+					color: #fff;
+					font-size: 12px;
+					font-weight: bold;
+					text-decoration: none;					
+				}
+		}
+}

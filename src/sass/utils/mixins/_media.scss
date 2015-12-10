@@ -1,0 +1,39 @@
+@mixin mq($args...) {
+  $media-type: 'only screen';
+  $media-type-key: 'media-type';
+  $args: keywords($args);
+  $expr: '';
+
+  @if map-has-key($args, $media-type-key) {
+    $media-type: map-get($args, $media-type-key);
+    $args: map-remove($args, $media-type-key);
+  }
+
+  @each $key, $value in $args {
+    @if $value {
+      $expr: "#{$expr} and (#{$key}: #{$value})";
+    }
+  }
+
+  @media #{$media-type} #{$expr} {
+    @content;
+  }
+}
+
+@mixin media-small{
+	@include mq($media-type: 'all', $min-width: $min-width-small, $max-width: $max-width-small) {
+		@content;
+	}
+}
+
+@mixin media-xsmall{
+  @include mq($media-type: 'all', $max-width: $max-width-xsmall) {
+    @content;
+  }
+}
+
+@mixin media-xxsmall{
+	@include mq($media-type: 'all', $max-width: $max-width-xxsmall) {
+		@content;
+	}
+}

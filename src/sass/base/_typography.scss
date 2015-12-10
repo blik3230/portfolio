@@ -1,0 +1,28 @@
+body {
+	color: #4b4b4b; // $clr-main-text
+	font: #{$em}px / 1.2 #{$f-jura};
+}
+
+h1, h2, h3, h4, h5, p  {
+	margin: 0;
+}
+
+h1 {
+	font-size: getEm(24);
+}
+
+h2 {
+	font-size: getEm(18);
+}
+
+h3 {
+	font-size: getEm(16);;
+}
+
+h4 {
+	font-size: getEm(14);
+}
+
+p {
+	font-size: getEm(14);
+}

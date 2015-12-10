@@ -1,0 +1,34 @@
+/**
+*
+* Главный файл sass в котором собераются все стили
+*  
+*/
+
+
+// vendors
+
+
+// настройки проекта
+@import "settings/variables";
+@import "settings/colors";
+
+// helpers
+@import "utils/mixins/media";
+@import "utils/functions/conversion";
+
+// base
+@import "base/fonts";
+@import "base/normalize";
+@import "base/common";
+@import "base/typography";
+
+// components
+@import "components/buttons";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+
+// pages
+
+// themes
