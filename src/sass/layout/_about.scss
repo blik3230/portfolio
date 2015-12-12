@@ -1,0 +1,42 @@
+.about {
+	height: 100vh;
+
+	.container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+	}	
+
+	&__title {
+
+		color: #202020;
+		font-size: $fs-title;
+
+		span {			
+			color: #2ec06c;
+		}
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+
+		color: #202020;
+		font: ($fs-title - 16) $f-roboto;
+	}
+
+	&__img {
+		margin: 20px;
+	}
+
+	&__content {
+
+		p {
+			font-size: $fs-text;
+
+			& + p {
+				margin-top: 20px;
+			}
+		}
+	}
+}

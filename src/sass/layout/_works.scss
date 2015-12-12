@@ -1,0 +1,31 @@
+.works {
+	padding-top: 90px;
+
+	.container { 
+		
+	}
+
+	&__title {
+		color: #202020;
+		font-size: $fs-title;
+	}
+
+	&__desc {
+
+		p {
+			font-size: $fs-text;
+		}
+	}
+
+	&__list {
+		margin: 0 0 0 -10px;
+		@extend .clfx;
+		
+		.work {
+			float: left;
+			width: 300px;
+			margin-left: 20px;
+		}
+	}
+
+}
