@@ -1,8 +1,26 @@
 section.cooperation
-	//- Всегда готов к сотрудничеству 
-	h1 С радостью возьмусь за ваш проект.
-	p Свяжитесь со мной и мы обсудим детали нашего сотрудничества.
+	.container 
+		h1.cooperation__title.title С радостью возьмусь за ваш проект.
+		p.cooperation__subtitle Свяжитесь со мной и мы обсудим детали нашего сотрудничества.
 
-	.contacts
+		.contacts
+			a.contacts__field(href="mailto:maxim.semenish@gmail.com") Мой Email: <span>maxim.semenish@gmail.com</span>
+			a.contacts__soc.contacts__soc_skype(href="skype:[blik3230]?add")
+			a.contacts__soc.contacts__soc_git(href="https://github.com/blik3230")
 
-	form.feedback
+		form.form
+
+			.form__row.grid-2
+				.grid-2__col-1
+					input(type="text", name="name", value="Ваше имя:")
+				.grid-2__col-1
+					input(type="text", name="projectname", value="Имя проекта:")
+
+			.form__row.grid-2
+				.grid-2__col-1
+					input(type="text", name="email", value="Ваш Email:")
+				.grid-2__col-1
+					input(type="text", name="name", value="Ваш Skype:")
+
+			.form__row
+				textarea(name="msg") Сообщение	

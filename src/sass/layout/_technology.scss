@@ -1,0 +1,19 @@
+.technology {
+	height: 350px;
+	background: url('../img/technology.jpg') center bottom no-repeat;
+	background-size: cover;
+
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .45);
+
+	.container {
+		padding: 30px;
+	}
+
+		&__title {
+			color: #fff;
+		}
+
+		&__list {
+			margin-top: 10px;
+		}
+}

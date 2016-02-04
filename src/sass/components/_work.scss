@@ -1,13 +1,214 @@
+$animation-time: .16s;
+$animation-time: .26s;
+$animation-time: .3s;
+
 .work {
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+
+	width: 300px;
+	width: 410px;
+
+	// background-color: #F5F5F5;
+	// border: 1px solid #F5F5F5;
+	border-radius: 2px;
+
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .30);
 
 	&__img {
-
+			overflow: hidden;
+			height: 250px;
+			height: 342px;
+			line-height: 250px;
+			line-height: 342px;
+			
+			
 		img {
 			width: 100%;
+			vertical-align: middle;
+
+			transition: transform .3s;
 		}
 	}
 
-	&__more {}
+	&__more {
+		position: absolute;
+		top: 0;
+		left: 0;
 
-	&__title {}
+		width: 100%;
+		height: 250px;
+		height: 342px;
+		opacity: 0;
+
+		background-color: #3D94A2;
+		background-color: $color-main-rgba;
+
+		border-radius: 2px 2px 0 0;
+
+		//transition: left .3s;
+		z-index: 3;
+
+		text-align: center;
+
+		.inner {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+			.btn {
+				display: block;
+				width: 215px;
+				padding: 15px 10px;
+				margin: 10px auto;
+
+				border: 1px solid #fff;
+
+				color: #fff;
+				font: bold 26px/26px $f-jura;
+				text-decoration: none;
+
+				transition: all .2s;
+
+				&:hover {
+					background-color: #3D94A2;
+					background-color: $color-main-rgba;
+
+					box-shadow: inset 3px 3px 8px rgba(255,255,255,.15),
+								inset -3px -3px 8px rgba(0,0,0,.05);
+				}
+			}
+	}
+
+	&:hover {
+		.work{
+			&__more {
+				//left: 0;
+			}
+
+			&__img {
+					
+					
+				img {
+					//transform: scale(1.3) rotate(33deg);
+				}
+			}
+		}
+	}
+
+	&__title {
+		position: relative;
+		padding: 20px;
+
+		background-color: #F5F5F5;
+		box-shadow: 0px -2px 2px rgba(0, 0, 0, .07);
+		text-align: center;
+
+		z-index: 20;
+
+		h2 {
+			display: inline-block;
+			font: bold 26px/30px $f-jura;
+			vertical-align: middle;
+		}
+	}
+
+
+	&.fromLeft .work__more {
+		opacity: 1;
+		animation: fromLeft $animation-time forwards;
+	}
+
+	&.toLeft  .work__more {
+		opacity: 1;
+		animation: toLeft $animation-time forwards;
+	}
+
+
+
+	&.fromRight  .work__more {
+		opacity: 1;
+		animation: fromRight $animation-time forwards;
+	}
+
+	&.toRight  .work__more {
+		opacity: 1;
+		animation: toRight $animation-time forwards;
+	}
+
+
+
+	&.fromTop  .work__more {
+		opacity: 1;
+		left: 0;
+		animation: fromTop $animation-time forwards;
+	}
+
+	&.toTop  .work__more {
+		opacity: 1;
+		left: 0;
+		animation: toTop $animation-time forwards;
+	}
+
+
+
+	&.fromBottom  .work__more {
+		opacity: 1;
+		left: 0;
+		animation: fromBottom $animation-time forwards;
+	}
+	
+	&.toBottom  .work__more {
+		opacity: 1;
+		left: 0;
+		animation: toBottom $animation-time forwards;
+	}
+}
+
+@keyframes fromLeft {
+    from {left: -100%;}
+    to {left: 0;}
+}
+
+@keyframes toLeft {
+    from {}
+    to {left: -100%;}
+}
+
+
+
+@keyframes fromRight {
+    from {left: 100%;}
+    to {left: 0;}
+}
+
+@keyframes toRight {
+    from {}
+    to {left: 100%;}
+}
+
+
+
+@keyframes fromTop {
+    from {top: -100%;}
+    to {top: 0;}
+}
+
+@keyframes toTop {
+    from {}
+    to {top: -100%;}
+}
+
+
+
+@keyframes fromBottom {
+    from {top: 100%;}
+    to {top: 0;}
+}
+
+@keyframes toBottom {
+    from {}
+    to {top: 100%;}
 }

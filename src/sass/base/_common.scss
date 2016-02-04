@@ -1,3 +1,7 @@
+body {
+	background-color: $color-bogy-bg;
+}
+
 .clfx {
     *zoom: 1;
 
@@ -12,11 +16,52 @@
 	}
 }
 
+.main-wrap {
+	position: relative;
+
+	overflow: scroll;
+	width: 100%;
+	height: 100vh;
+
+	.btn-nav {
+		position: fixed;
+		top: -5px;
+		left: 50%;
+		
+		width: 120px;
+		padding: 40px 0 5px;
+		margin-left: -790px;
+		
+		border: 1px solid #000;
+		border-radius: 4px;
+		background-color: #fff;
+
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, .30);
+		
+		color: #000;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 44px;
+
+			width: 32px;
+			height: 32px;
+			background-image: url(../img/about.png);
+		}
+	}
+}
+
 .container {
-	width: $container-medium;
+	width: $container-large;
 	margin: 0 auto;
 
 	@include media-xsmall{
+
 		width: auto;
 		margin-left: 10px;
 		margin-right: 10px;
@@ -24,5 +69,9 @@
 
 	@include media-small{
 		width: $container-small;
+	}	
+
+	@include media-large{
+		width: $container-large;
 	}		
 }

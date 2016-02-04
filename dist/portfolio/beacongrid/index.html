@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="all">
+    <meta name="author" content="Cuberto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeaconGrid</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="favicon.png">
+    <link rel="stylesheet" href="dist/css/all.css"><!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        <header class="b-header"><a href="#index" class="b-header__logo"> <img src="media/img/logo.png" alt="logo"></a>
+                <nav class="c-nav"><a href="#index"><span>Home</span></a><a href="#pricing"><span>Pricing</span></a><a href="#enterprise"><span>Enterprise</span></a><a href="#contacts"><span>Contacts</span></a><a href="#get_started"><span>Get Started</span></a>
+                  <div class="el-line"></div>
+                </nav><a href="#login" class="b-header__btn">Login</a>
+        </header>
+    <section class="b-main-content"></section>
+    <script type="text/x-template" id="pg-home">
+      <div id="multi-video" class="c-multi-video">
+        <video muted>
+          <source src="media/video/home_bg.mp4" type="video/mp4">
+          <source src="media/video/home_bg.ogv" type="video/ogg">
+          <source src="media/video/home_bg.webm" type="video/webm">
+        </video>
+        <video muted>
+          <source src="media/video/home_bg.mp4" type="video/mp4">
+          <source src="media/video/home_bg.ogv" type="video/ogg">
+          <source src="media/video/home_bg.webm" type="video/webm">
+        </video>
+        <video muted>
+          <source src="media/video/home_bg.mp4" type="video/mp4">
+          <source src="media/video/home_bg.ogv" type="video/ogg">
+          <source src="media/video/home_bg.webm" type="video/webm">
+        </video>
+        <div class="c-multi-video__statusbar">
+          <div id="labels-group" class="c-multi-video__labels-group">
+            <div class="e-label">Use ibeacon <br/> network</div>
+            <div class="e-label">Why use <br/> beacongrid</div>
+            <div class="e-label">How it <br/> works</div>
+          </div>
+          <canvas id="statusbar" class="c-multi-video__progress"></canvas>
+        </div>
+      </div>
+      <section class="b-home">
+        <div class="text-info">
+          <h1>Use iBeacon Network</h1>
+          <p>Acess iBeacon Network in Universities, Cities, Venues, Retail</p><a href="./#get_started" class="btn-danger btn-lg">Get started</a>
+        </div>
+      </section>
+    </script>
+    <script type="text/x-template" id="pg-pricing">
+      <section class="main">
+        <div class="b-pricing">
+          <p class="h1">Access to all public beacons on the grid is free</p><a href="#get_started" class="btn-danger btn-lg">Get started</a>
+        </div>
+      </section>
+    </script>
+    <script type="text/x-template" id="pg-benefits">
+      <ul class="b-benefits-list">
+        <li>
+          <section class="b-benefits-list__section-api">
+            <h1>Api Uptime</h1>
+            <p>BeaconGrid is built on a foundation of transparency</p>
+          </section>
+        </li>
+        <li>
+          <section class="b-benefits-list__section-security">
+            <h1>Security</h1>
+            <p>SSL support, HTTP authentification, and Signature</p>
+          </section>
+        </li>
+        <li>
+          <section class="b-benefits-list__section-support">
+            <h1>24-hour Support</h1>
+            <p>24x7 email support comes on all accounts and personalized</p>
+          </section>
+        </li>
+        <li>
+          <section class="b-benefits-list__section-extras">
+            <h1>Extras</h1>
+            <p>No iBeacon hardware needed. We provide developer tools to</p>
+          </section>
+        </li>
+      </ul>
+    </script>
+    <script type="text/x-template" id="pg-use-cases">
+      <section class="content">
+        <div class="b-use-cases">
+          <div class="b-use-cases__heading">
+            <p class="h1">Apps with BeaconGrid's indoor micro-location data.</p>
+          </div>
+          <ul class="b-use-cases__list">
+            <li class="active"><img src="media/tmp/b-use-cases/1.png" alt="logo" class="disable"><img src="media/tmp/b-use-cases/1_active.png" alt="logo" class="active"></li>
+            <li><img src="media/tmp/b-use-cases/2.png" alt="logo" class="disable"><img src="media/tmp/b-use-cases/2_active.png" alt="logo" class="active"></li>
+            <li><img src="media/tmp/b-use-cases/3.png" alt="logo" class="disable"><img src="media/tmp/b-use-cases/3_active.png" alt="logo" class="active"></li>
+            <li><img src="media/tmp/b-use-cases/4.png" alt="logo" class="disable"><img src="media/tmp/b-use-cases/4_active.png" alt="logo" class="active"></li>
+            <li><img src="media/tmp/b-use-cases/4.png" alt="logo" class="disable"><img src="media/tmp/b-use-cases/4_active.png" alt="logo" class="active"></li>
+          </ul>
+        </div>
+      </section>
+      <aside class="aside">
+        <ul class="b-use-cases__list-result">
+          <li class="active">
+            <h2 class="h1">Safermobility</h2>
+            <p><mark>Safermobility</mark> uses BeaconGrid to provide a dispatachable location of indoor wireless callers to first responders</p><a href="#" class="btn-danger btn-lg">Sign up to enhance your app</a>
+          </li>
+          <li>
+            <h2 class="h1">Safermobility</h2>
+            <p>Safermobility uses BeaconGrid to provide a dispatachable location of indoor wireless callers to first responders</p><a href="#" class="btn-danger btn-lg">Sign up to enhance your app</a>
+          </li>
+          <li>
+            <h2 class="h1">Safermobility</h2>
+            <p>Safermobility uses BeaconGrid to provide a dispatachable location of indoor wireless callers to first responders</p><a href="#" class="btn-danger btn-lg">Sign up to enhance your app</a>
+          </li>
+          <li>
+            <h2 class="h1">Safermobility</h2>
+            <p>Safermobility uses BeaconGrid to provide a dispatachable location of indoor wireless callers to first responders</p><a href="#" class="btn-danger btn-lg">Sign up to enhance your app</a>
+          </li>
+        </ul>
+      </aside>
+    </script>
+    <script type="text/x-template" id="pg-enterprise">
+      <section class="main">
+        <div class="b-enterprise item">
+          <h1>BeaconGrid<br>For Enterprises</h1>
+          <p>Contact Us to Deploy Private </p>
+          <button class="btn-danger btn-lg">Learn more</button>
+        </div>
+      </section>
+      <aside class="aside">
+        <ul class="b-enterprise__list">
+          <li style="background-image: url(media/img/pg-enterprise/slider/1.jpg);" class="active">
+            <h2 class="h1">Hotels</h2>
+            <p>
+               
+              Real-time locating system<br>to view the indoor whereabouts<br>of people or asserts.
+            </p>
+          </li>
+          <li style="background-image: url(media/img/pg-enterprise/slider/2.jpg);">
+            <h2 class="h1">Hotels</h2>
+            <p>
+               
+              Real-time locating system<br>to view the indoor whereabouts<br>of people or asserts.
+            </p>
+          </li>
+          <li style="background-image: url(media/img/pg-enterprise/slider/3.jpg);">
+            <h2 class="h1">Hotels</h2>
+            <p>
+               
+              Real-time locating system<br>to view the indoor whereabouts<br>of people or asserts.
+            </p>
+          </li>
+        </ul>
+      </aside>
+    </script>
+    <script type="text/x-template" id="pg-contacts">
+      <section class="g-content_overflow">
+        <div class="item">
+          <ul class="c-list-inside-pages">
+            <li class="active"><a href="#contacts/contacts">Contacts</a></li>
+            <li><a href="#contacts/privacy_and_policy">Privacy & policy</a></li>
+            <li><a href="#contacts/terms_of_service">Terms of service</a></li>
+          </ul>
+        </div>
+      </section>
+    </script>
+    <script type="text/x-template" id="tab-contacts">
+      <section class="b-team">
+        <h1>BeaconGrid Team</h1>
+        <p>
+           
+          We're happy to provide technical, developer,<br/>or general support. Also checkout our <a href="" class="link">developer hub.</a>
+        </p>
+        <ul class="b-team__list">
+          <li><a href="mailto:#">Email:<span>team@beacongrid.co</span></a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </section>
+      <aside class="g-aside">
+        <div class="b-contacts-other-info">
+          <h2 class="h1">Our<br/>mission</h2>
+          <hr>
+          <p>
+             
+            Provide creative tools that help anyone give a voice to their ideas. From the designers and engineers who are creating the next generation of web and mobile experiences, to anyone putting a website together for the first time, Squarespace provides elegant solutions that set new standards for online publishing.
+          </p>
+        </div>
+        <footer class="b-contacts-other-info__footer">
+          <ul class="b-contacts-other-info__partners-list">
+            <li><img src="media/img/b-partners/1.png" alt="partner"></li>
+            <li><img src="media/img/b-partners/2.png" alt="partner"></li>
+            <li><img src="media/img/b-partners/3.png" alt="partner"></li>
+          </ul>
+          <p><a href="http://cuberto.com/" target="_blank" class="link">Cuberto:</a> Design & Development</p>
+        </footer>
+      </aside>
+    </script>
+    <script type="text/x-template" id="tab-privacy-policy">
+      <div class="g-content_overflow content">
+        <div class="item">
+          <header class="header">
+            <h1>Privacy & Policy</h1>
+            <p class="g-text_mark">There are many different ways that you can use our services –<br>to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a Google Account, we can make those services</p>
+            <div class="b-list">
+              <h2 class="b-list__heading">Our Privacy Policy explains:</h2>
+              <ul>
+                <li>What information we collect and why we collect it.</li>
+                <li>How we use that information.</li>
+                <li>The choices we offer, including how to access and update information.</li>
+              </ul>
+            </div>
+          </header>
+          <h2>How we use information<br>that we collect</h2>
+          <p>We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones and to protect Google and our users. We also use this information to offer you tailored content – such as giving you more relevant search results and ads.</p>
+          <p>We may use the name that you provide for your Google Profile across all of the services we offer that require a Google Account. In addition, we may replace past names associated with your Google Account, so that you are represented consistently across all our services. If other users already have your email or other information that identifies you, we may show them your publicly visible Google Profile information, such as your name and photo.</p>
+          <p>If you have a Google Account, we may display your Profile name, Profile photo, and actions you take on Google or on third-party applications connected to your Google Account (such as +1’s, reviews you write and comments you post) in our services, including displaying in ads and other commercial contexts. We will respect the choices that you make to limit sharing or visibility settings in your Google Account.</p>
+          <p>When you contact Google, we keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.</p>
+          <p>We use information collected from cookies and other technologies, like pixel tags, to improve your user experience and the overall quality of our services. One of the products that we use to do this on our own services is Google Analytics. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate an identifier from cookies or similar technologies with sensitive categories, such as those based on race, religion, sexual orientation or health.</p>
+          <p>Our automated systems analyse your content (including emails) to provide you with personally relevant product features, such as customised search results, tailored advertising and spam and malware detection.</p>
+          <p>We may combine personal information from one service with information, including personal information, from other Google services – for example, to make it easier to share things with people you know. We will not combine DoubleClick cookie information with personally identifiable information unless we have your opt-in consent.</p>
+          <p>We will ask for your consent before using information for a purpose other than those set out in this Privacy Policy.</p>
+          <p>Google processes personal information on our servers in many countries around the world. We may process your personal information on a server located outside the country where you live.</p>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="tab-service-terms">
+      <div class="g-content_overflow content">
+        <div class="item">
+          <header>
+            <h1>Terms of service</h1>
+            <p class="g-text_mark">Our Services are very diverse, so sometimes additional terms or product requirements (including age requirements) may apply. Additional terms will be available with the relevant Services and those additional terms become part of your agreement with us if you use those Services.</p>
+          </header>
+          <h2>Using our Services</h2>
+          <p>Do not misuse our Services, for example, do not interfere with our Services or try to access them using a method other than the interface and the instructions that we provide. You may use our Services only as permitted by law, including applicable export and control laws and regulations. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.</p>
+          <p>Using our Services does not give you ownership of any intellectual property rights in our Services or the content that you access. You may not use content from our Services unless you obtain permission from its owner or are otherwise permitted by law. These terms do not grant you the right to use any branding or logos used in our Services. Do not remove, obscure or alter any legal notices displayed in or along with our Services.</p>
+          <p>Our Services display some content that is not Google’s. This content is the sole responsibility of the entity that makes it available. We may review content to determine whether it is illegal or violates our policies, and we may remove or refuse to display content that we reasonably believe violates our policies or the law. But that does not necessarily mean that we review content, so please do not assume that we do.</p>
+          <p>In connection with your use of the Services, we may send you service announcements, administrative messages and other information. You may opt out of some of those communications.</p>
+          <p>Some of our Services are available on mobile devices. Do not use such Services in a way that distracts you and prevents you from obeying traffic or safety laws.</p>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="pg-get-started">
+      <ul class="c-list-inside-pages">
+        <li><a href="#get_started/add_beacons">add Beacons</a></li>
+        <li><a href="#get_started/beacons">Beacons</a>
+          <div class="g-amount">2</div>
+        </li>
+      </ul>
+    </script>
+    <script type="text/x-template" id="tab-add-beacons">
+      <section class="b-search item">
+        <div class="b-search__header js-search__header">
+          <form class="b-search__input item">
+            <input value="Washington D.C.">
+            <button type="submit"></button>
+          </form>
+          <ul class="b-search__tags item">
+            <li class="active">Gym</li>
+            <li class="active">Stadium</li>
+            <li>Restaurant</li>
+            <li>Cafe</li>
+          </ul>
+          <div class="b-search__result-text item">Found: <span>324</span> places, <span>2667</span> ibeacons</div>
+        </div>
+        <ul class="b-search__result-list">
+          <li class="js-open-modal">
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/1.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Baked & Wired</h3>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-amount"><span>3</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="el-access"><span>Access</span></button>
+            </div>
+          </li>
+          <li class="js-open-modal">
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/2.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Foggy Bottom</h3>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-amount"><span>5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="el-access"><span>Access</span></button>
+            </div>
+          </li>
+          <li class="js-open-modal">
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/3.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <div class="main-info">
+                  <h3>Room 11</h3>
+                  <p>Restaurant, Cafe</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-amount"><span>20</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="el-access"><span>Access</span></button>
+            </div>
+          </li>
+          <li class="js-open-modal">
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/4.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Illy</h3>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-amount"><span>5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="el-access"><span>Access</span></button>
+            </div>
+          </li>
+          <li class="js-open-modal">
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/5.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <div class="main-info">
+                  <h3>Room 11</h3>
+                  <p>Restaurant, Cafe</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-amount"><span>5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="el-access"><span>Access</span></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <aside class="b-map item">
+        <div id="map"></div>
+        <div class="b-map__control">
+          <div class="b-checkbox item">
+            <div class="checkbox">
+              <input type="checkbox">
+              <div class="checkbox__checked"></div>
+            </div>
+            <label>Search when i move the map</label>
+          </div>
+          <button class="btn-danger item">Select beacons</button>
+        </div>
+        <div class="b-map__result">
+          <p>Access all 1245 beacons in Washington DC</p>
+        </div>
+      </aside>
+      <script>(function ($) {
+	//obj App created in login.js
+
+	console.log($('#modal-beacons-place').html())
+	App.Views.ModalBeaconsPlace = Backbone.View.extend({
+		tagName: 'div',
+		className: 'modal-beacons-place',
+		template: template('modal-beacons-place'),
+
+		render: function() {
+			this.$el.html( this.template() );
+			return this;
+		}
+	});
+
+	var modalView = new App.Views.ModalBeaconsPlace();
+
+	var $modal = modalView.render().$el;
+	var $pageContainer = $('.b-inside-page');
+	var $btnOpenModal = $pageContainer.find('.js-open-modal');
+
+	var hOpenModal = function() {
+		$pageContainer.append($modal);
+	};
+
+	var hCloseModal = function() {
+		$modal.remove();
+	};
+
+	$btnOpenModal.on('click', hOpenModal);
+	$pageContainer.on('click','.js-close-modal', hCloseModal);
+
+})(jQuery);(function ($) {
+	var map;
+	
+	var styles = [
+	  {
+	    "elementType": "geometry.fill",
+	    "stylers": [
+	      { "visibility": "on" },
+	      { "weight": 0.1 },
+	      { "color": "#f2f2f2" }
+	    ]
+	  },{
+	    "featureType": "road",
+	    "elementType": "geometry.fill",
+	    "stylers": [
+	      { "color": "#ffffff" },
+	      { "weight": 5.1 }
+	    ]
+	  },{
+	    "featureType": "road",
+	    "elementType": "geometry.stroke",
+	    "stylers": [
+	      { "color": "#eaeaea" },
+	      { "weight": 1.1 }
+	    ]
+	  },{
+	    "featureType": "poi",
+	    "elementType": "labels",
+	    "stylers": [
+	      { "visibility": "off" }
+	    ]
+	  },{
+	    "featureType": "transit",
+	    "stylers": [
+	      { "visibility": "off" }
+	    ]
+	  },{
+	    "featureType": "water",
+	    "stylers": [
+	      { "color": "#1479fd" }
+	    ]
+	  },{
+	    "featureType": "administrative",
+	    "elementType": "labels.text.fill",
+	    "stylers": [
+	      { "color": "#808080" }
+	    ]
+	  },{
+	    "featureType": "road",
+	    "elementType": "labels.icon",
+	    "stylers": [
+	      { "color": "#808080" },
+	      { "visibility": "off" }
+	    ]
+	  },{
+	    "featureType": "road",
+	    "elementType": "labels.text.fill",
+	    "stylers": [
+	      { "color": "#bfbfbf" },
+	      { "lightness": -1 }
+	    ]
+	  }
+	];
+	window.initMap = function() {
+		console.log('create map');
+	  map = new google.maps.Map(document.getElementById('map'), {
+	    center: {lat: 38.9101100, lng: -77.0443700},
+	    zoom: 15,
+	    minZoom: 8,
+	    maxZoom: 16,
+	    disableDefaultUI: true
+	  });
+	  map.setOptions({styles: styles})
+	}
+
+	$.ajax({
+		type: "GET",
+		url: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDsrCE95SQZCOoDxby4QPW0yM5hrgbZiC4&callback=initMap",
+		dataType: "script",
+		cache: true
+	});
+
+})(jQuery);
+      </script>
+    </script>
+    <script type="text/x-template" id="tab-beacons">
+      <section class="b-search item">
+        <div class="b-search__header js-search__header">
+          <form class="b-search__input">
+            <input placeholder="Search your Beacons">
+            <button type="submit"></button>
+          </form>
+          <ul class="b-search__tags">
+            <li class="active">Gym</li>
+            <li class="active">Stadium</li>
+            <li class="active">Restaurant</li>
+            <li class="active">Cafe</li>
+          </ul>
+          <div class="b-search__result-text-and-btn">
+            <div class="b-search__result-text">Access: <span>20</span> places, <span>100</span> ibeacons</div>
+            <button class="btn-danger btn-lg">get access</button>
+          </div>
+          <div class="b-search__result-control">
+            <div class="b-checkbox">
+              <div class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checked"></div>
+              </div>
+              <label class="label">0 selected</label>
+            </div>
+            <button class="btn-delete-selected">Delete Selected</button>
+          </div>
+        </div>
+        <ul class="b-search__result-control-list">
+          <li class="offline">
+            <div class="item">
+              <div class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checked"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/6.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Foggy Bottom</h3>
+                <p class="el-uuid">UUID: B9407F30-F5F8-466E-AFF9-25556B57FE60</p>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-count"><span>5/5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="btn-delete"></button>
+            </div>
+          </li>
+          <li class="offline">
+            <div class="item">
+              <div class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checked"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/1.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Foggy Bottom</h3>
+                <p class="el-uuid">UUID: B9407F30-F5F8-466E-AFF9-25556B57FE60</p>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-count"><span>5/5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="btn-delete"></button>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <div class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checked"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/2.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Foggy Bottom</h3>
+                <p class="el-uuid">UUID: B9407F30-F5F8-466E-AFF9-25556B57FE60</p>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-count"><span>5/5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="btn-delete"></button>
+            </div>
+          </li>
+          <li>
+            <div class="item">
+              <div class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox__checked"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div style="background-image: url(media/tmp/pg-get-started/b-search/3.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h3>Foggy Bottom</h3>
+                <p class="el-uuid">UUID: B9407F30-F5F8-466E-AFF9-25556B57FE60</p>
+                <p>Restaurant, Cafe</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="el-beacons-count"><span>5/5</span> beacons</div>
+            </div>
+            <div class="item">
+              <button class="btn-delete"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </script>
+    <script type="text/x-template" id="modal-login">
+      <div class="b-header"><a href="#index" class="b-header__logo js-home"> <img src="media/img/logo.png" alt="logo"></a>
+        <div class="btn-close_login js-back"></div>
+      </div>
+      <div class="tab-signup">
+        <form method="post">
+          <h2>
+            Sign up for a <br>
+            BeaconGrid Account
+            
+          </h2>
+          <div class="hide-wrap">
+            <div class="f-row">
+              <input type="text" name="UserName" placeholder="E-mail" class="input">
+            </div>
+            <div class="f-row">
+              <input type="password" name="Password" placeholder="Password" class="input">
+            </div>
+            <div class="f-row">
+              <div class="m-checkbox">
+                <input type="checkbox" name="mailme" id="mailme">
+                <label for="mailme"><span class="instead"> </span><span class="text">E-mail me when beacons are available at this location</span></label>
+              </div>
+            </div>
+            <button class="btn-send">Create			</button>
+          </div>
+        </form>
+        <div class="btn-next"></div>
+      </div>
+      <div class="tab-login active">
+        <form>
+          <h2>
+            Log in <br>
+            BeaconGrid 
+            
+          </h2>
+          <div class="hide-wrap">
+            <div class="f-row">
+              <input type="text" name="email" placeholder="E-mail" class="input">
+            </div>
+            <div class="f-row">
+              <input type="password" name="pass" placeholder="Password" class="input">
+            </div>
+            <div class="f-row">
+              <div class="m-checkbox">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember"><span class="instead"> </span><span class="text">Remember me</span></label>
+              </div>
+            </div><a href="login.html" class="btn-send">Login	</a>
+          </div>
+        </form>
+        <div class="btn-next"></div>
+      </div>
+      <script>(function($){
+	var $modalContainer = $('.modal-login'),
+		$tabs = $('[class^=tab-]'),
+		$btnBack = $('.js-back'),
+		$btnHome = $('.js-home'),
+		fAnim = false;
+
+	$tabs.find('.btn-next').on('click', function(){	
+		if(!fAnim){
+			var $this = $(this),
+				$cur = $tabs.filter('.active'),
+				$next = $(this).closest('[class^=tab-]');
+
+			fAnim = true;
+
+			$cur.removeClass('active').addClass('toLeft');
+			$next.addClass('active');
+
+			setTimeout(function(){
+				$cur.addClass('right');
+
+				setTimeout(function(){
+					$cur.removeClass('right toLeft');	
+
+					setTimeout(function(){
+						fAnim = false;		
+					},400);
+
+				}, 60);
+
+			}, 350);			
+			
+		}	
+		
+	});
+
+	$btnBack.on('click',function(){
+		$modalContainer.remove()
+		window.history.back();		
+	});
+
+	$btnHome.on('click',function(){
+		$modalContainer.remove();		
+	});
+})(jQuery);
+      </script>
+    </script>
+    <script type="text/x-template" id="modal-beacons-place">
+      <div class="modal__overlay js-close-modal"></div>
+      <section class="modal__box g-content_overflow">
+        <div class="b-beacons-place item">
+          <header class="b-beacons-place__header">
+            <div class="b-beacons-place__header__title">
+              <div style="background-image: url(media/tmp/b-beacons-place/main.jpg);" class="visual-info"></div>
+              <div class="text-info">
+                <h2>Chinatown Bar</h2>
+                <p class="el-place-type">Restaurant, Cafe</p>
+              </div>
+            </div>
+            <p class="el-description">iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta.</p>
+            <button class="btn-access-beacons">Access 5 beacons</button>
+          </header>
+          <ul class="b-beacons-place__list">
+            <li>
+              <div class="b-beacons-place__list__title">
+                <div class="main-info">
+                  <div style="background-image: url(media/tmp/b-beacons-place/1.jpg);" class="visual-info"></div>
+                  <h3 class="text-info">1 Floor, Room 1 </h3>
+                </div>
+                <div class="btn-access"><span>Access</span></div>
+              </div>
+              <div class="b-beacons-place__list__info">
+                <p>iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta Associaties.</p>
+              </div>
+            </li>
+            <li class="active">
+              <div class="b-beacons-place__list__title">
+                <div class="main-info">
+                  <div style="background-image: url(media/tmp/b-beacons-place/2.jpg);" class="visual-info"></div>
+                  <h3 class="text-info">1 Floor, Room 2</h3>
+                </div>
+                <div class="btn-access"><span>Access</span></div>
+              </div>
+              <div class="b-beacons-place__list__info">
+                <p>iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta Associaties.</p>
+              </div>
+            </li>
+            <li>
+              <div class="b-beacons-place__list__title">
+                <div class="main-info">
+                  <div style="background-image: url(media/tmp/b-beacons-place/3.jpg);" class="visual-info"></div>
+                  <h3 class="text-info">1 Floor, Room 3</h3>
+                </div>
+                <div class="btn-access"><span>Access</span></div>
+              </div>
+              <div class="b-beacons-place__list__info">
+                <p>iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta Associaties.</p>
+              </div>
+            </li>
+            <li>
+              <div class="b-beacons-place__list__title">
+                <div class="main-info">
+                  <div style="background-image: url(media/tmp/b-beacons-place/4.jpg);" class="visual-info"></div>
+                  <h3 class="text-info">2 Floor, Room 2</h3>
+                </div>
+                <div class="btn-access"><span>Access</span></div>
+              </div>
+              <div class="b-beacons-place__list__info">
+                <p>iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta Associaties.</p>
+              </div>
+            </li>
+            <li>
+              <div class="b-beacons-place__list__title">
+                <div class="main-info">
+                  <div style="background-image: url(media/tmp/b-beacons-place/5.jpg);" class="visual-info"></div>
+                  <h3 class="text-info">2 Floor, Room 1</h3>
+                </div>
+                <div class="btn-access"><span>Access</span></div>
+              </div>
+              <div class="b-beacons-place__list__info">
+                <p>iBeacons right in the heart of NoMa in Washington DC. Voted best apartment community in DC by Washington City Paper and Delta Associaties.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://underscorejs.ru/underscore-min.js"></script>
+    <script src="http://backbonejs.ru/backbone-min.js"></script>
+    <script src="js/plugins/blik-blockPosition.js"></script>
+    <script src="js/plugins/unitedVideo.js"></script>
+    <script src="js/code/b-header.js"></script>
+    <script src="js/code/index.js"></script>
+  </body>
+</html>

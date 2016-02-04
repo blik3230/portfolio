@@ -5,7 +5,8 @@ $f-jura: 'Jura', sans-serif;
 // sizes for .container
 $container-xsmall: 100%;
 $container-small: 750px;
-$container-medium: 960px;   // defauld
+$container-medium: 960px;
+$container-large: 1200px;   // defauld
 
 // for sizes media
 $max-width-xxsmall: 480px;
@@ -13,6 +14,11 @@ $max-width-xsmall: 769px;
 
 $min-width-small: 770px;
 $max-width-small: 979px;
+
+$min-width-media: 1585px;
+$max-width-media: 1585px;
+
+$min-width-large: 1585px;
 
 //font-size
 $em: 16;

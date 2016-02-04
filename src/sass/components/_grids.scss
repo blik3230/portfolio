@@ -1,0 +1,15 @@
+.grid-2 {
+	@extend .clfx;
+	
+	[class*="grid-2__col"] {
+		float: left;
+
+		& + [class*="grid-2__col"] {
+			margin-left: 20px;
+		}
+	}
+
+	&__col-1 {
+		width: calc( 50% - 10px);
+	}
+}

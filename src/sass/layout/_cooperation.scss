@@ -1,0 +1,84 @@
+.cooperation {
+	padding: 20px 0 30px;
+
+	@extend .clfx;
+
+	&__title {}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		font-size: $fs-text;
+	}
+
+	.contacts {
+		float: left;
+		width: 380px;
+		
+		&__field {
+			display: block;
+			margin-bottom: 20px;
+
+			font-size: 20px;
+			font-weight: bold;
+			text-decoration: none;
+			color: #000;
+
+			span {
+				color: $color-main;
+				font-weight: normal;
+				float: right;
+			}
+		}
+
+		&__soc {
+			position: relative;
+			float: left;
+			box-sizing: border-box;
+
+			width: 180px;
+			height: 180px;
+			
+			border: 1px solid  #000;
+			border-radius: 4px;
+
+			& + .contacts__soc {
+				margin-left: 20px;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 49px;
+				left: 49px;
+
+				width: 80px;
+				height: 80px;
+
+				background-color: red;
+			}
+
+			&_git {
+				border-color: #0D2636;
+
+				&:after {
+					background: url(../img/contacts/git.png);
+				}
+			}
+
+			&_skype {
+				border-color: #009CD8;
+
+				&:after {
+					background: url(../img/contacts/skype.png);
+				}
+			}
+
+		}
+
+	}
+
+	.form {
+		float: right;
+		width: 800px;
+	}
+}

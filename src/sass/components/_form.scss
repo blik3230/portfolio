@@ -1,0 +1,32 @@
+.form {
+
+	&__row {
+
+		& + .form__row {
+			margin-top: 10px;
+		}
+	}
+
+		input[type=text],
+		textarea {
+			box-sizing: border-box;
+			
+			width: 100%;
+			padding: 10px;
+
+			border: 1px solid  #000;
+			border-radius: 4px;
+			
+			font-size: 18px;
+			font-weight: bold;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		textarea {
+			height: 122px;
+			resize: none;
+		}
+}

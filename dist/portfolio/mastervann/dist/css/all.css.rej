@@ -1,0 +1,9 @@
+diff a/code/dist/css/all.css b/code/dist/css/all.css	(rejected hunks)
+@@ -1549,6 +1549,7 @@
+   .b-advantages .list li {
+     width: 280px;
+     padding: 22px 35px 14px;
++  }
+ >>>>>>> 716ddb5c9676bb3ae5125b39a660bde6a3b25c82
+ }
+ .b-advantages .list li:after {

@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="all">
+	<meta name="author" content="Cuberto">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Мастер ванн</title>
+
+	<link rel="shortcut icon" href="favicon.ico"> <!-- 32px -->
+	<link rel="apple-touch-icon-precomposed" href="favicon.png"> <!-- 180px -->
+
+	<link rel="stylesheet" href="dist/css/all.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
+	<link rel="stylesheet" href="dist/css/glisse.css">
+	<link rel="stylesheet" href="dist/css/jquery.jscrollpane.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- swiper -->
+	<script src="js/swiper/swiper.jquery.min.js"></script>
+
+	<!-- glisse -->
+	<script src="js/Glisse/glisse.js"></script>
+
+	<!-- jScrollPane -->
+	<script src="js/jScroll/jquery.mousewheel.js"></script>
+	<script src="js/jScroll/jquery.jscrollpane.min.js"></script>
+</head>
+<body>
+	<section class="b-home">
+		<div class="container">
+			<div class="item">
+				<h1>Ремонт ванных комнат<br>«под ключ»</h1>
+			</div>
+			<button class="btn-down" id="js-btn-home"></button>
+		</div>
+	</section>
+
+	<header class="b-header small">
+		<div class="container">
+			<a href="../index.php" class="logo"></a>
+			
+			<nav class="nav-main">
+				<ul>
+					<li><a href="#about">О компании</a></li>
+					<li><a href="#projects">Выполненные проекты</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+				</ul>
+			</nav>
+
+			<address class="phone">
+				<span class="phone-number">+7 (812) 493-24-95</span>
+				<span class="clarifying-text">c 9:00 до 23:00 (без выходных)</span>
+			</address>
+
+			<button class="btn-empty" id="js-btn-call">Вызвать замерщика</button>
+		</div>
+	</header>
+
+	<section class="container js-toScrollBlock js-about" id="about">
+		<div class="b-advantages">
+			<h2>Стильная ванная комната за 14 дней</h2>
+			<p class="p">Опыт работы наших мастеров по отделке ванных комнат свыше 10 лет.<br>Поэтому всего за 2 недели мы полностью изменим вашу ванную, включая замену сантехники.<br>Стоимость ремонта фиксируется до начала работ и остается неизменной.</p>
+
+			<div class="list">
+				<ul>
+					<li>
+						<h3 class="h4">Бесплатный замер</h3>
+						<p>Мастер приедет и проведёт все необходимые замеры бесплатно!</p>
+					</li>
+					<li>
+						<h3 class="h4">Фиксированная цена</h3>
+						<p>Стоимость ремонта фиксируется до начала работ и остается неизменной.</p>
+					</li>
+					<li>
+						<h3 class="h4">Гарантия до 10 лет</h3>
+						<p>Мы гарантируем качество нашей работы на срок<br>до 10 лет.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="b-principles">
+			<h2>
+				<span>Принципы нашей работы</span>
+			</h2>
+
+			<div class="list">
+				<ul>
+					<li>
+						Чистота
+					</li>
+					<li>
+						Забота об имуществе клиента
+					</li>
+					<li>
+						Работа по календарному плану
+					</li>
+					<li>
+						Работаем по стандарту качества СНИП
+					</li>
+					<li>
+						Работаем по техническому заданию
+					</li>
+					<li>
+						Возможность заранее познакомиться c мастером и прорабом
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						Мы договариваемся с вашими соседями,<br>чтобы не доставлять им дискомфорт при ремонте
+					</li>
+					<li>
+						Помощь в подборе чистовых материалов, совместные поездки в магазин с прорабом
+					</li>
+					<li>
+						Берем на себя закупку черновых материалов, вывоз мусора и ванны
+					</li>
+					<li>
+						Пунктуальность
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="b-works js-toScrollBlock" id="projects">
+		<div class="container">
+			<h2>Более 165 успешно выполненных работ</h2>
+
+			<dl class="tab-dl" id="js-tab-dl">
+				<dt>все виды работы</dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/1.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Проведены работы проектированию ванной, а также заказ и установка премиум сантехники Vallone.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/2.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Совместный саузел</h3>
+									<p>Демонтаж старого и установка нового саунзла, а также заказ и установка сантехники Grohe.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/3.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Демонтаж старой ванной, разработка плана новой. Все работы «под ключ» согласно плану новой ванной.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/4.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Установка раковины</h3>
+									<p>Установка новой раковины премиум бренда Vapporone, а также создание авторской тумбы под нее.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/5.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Установка ванны</h3>
+									<p>Проведены работы проектированию ванной, а также заказ и установка премиум сантехники Vallone.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/6.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Демонтаж старого и установка нового саунзла, а также заказ и установка сантехники Grohe.</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<button class="btn-more">показать еще работы</button>
+				</dd>
+
+				<dt>ванная</dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/1.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Проведены работы проектированию ванной, а также заказ и установка премиум сантехники Vallone.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/2.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Совместный саузел</h3>
+									<p>Демонтаж старого и установка нового саунзла, а также заказ и установка сантехники Grohe.</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+
+				<dt>туалет</dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/1.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Проведены работы проектированию ванной, а также заказ и установка премиум сантехники Vallone.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/2.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Совместный саузел</h3>
+									<p>Демонтаж старого и установка нового саунзла, а также заказ и установка сантехники Grohe.</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+
+				<dt>совместный санузел</dt>
+				<dd>
+					<ul>
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/1.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Ремонт ванной</h3>
+									<p>Проведены работы проектированию ванной, а также заказ и установка премиум сантехники Vallone.</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="../project.php">
+								<div class="visual-info">
+									<div class="img" style="background-image: url(media/img/b-works/2.jpg)"></div>
+								</div>
+								
+								<div class="text-info">
+									<h3 class="h4">Совместный саузел</h3>
+									<p>Демонтаж старого и установка нового саунзла, а также заказ и установка сантехники Grohe.</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</section>
+
+	<section class="b-reviews js-toScrollBlock" id="reviews">
+		<div class="container">
+			<h2>Отзывы наших клиентов</h2>
+			<p class="p">Все наши клиенты после окончания работ заполняют анкеты-опросники,<br>основываясь на которые наш <b>отдел контроля качества</b> анализирует проделанную работу<br>и вносит необходимые корректировки в процесс работы.</p>
+
+			<button class="btn-more">Посмотреть еще отзывы</button>
+			<ul class="list-group">
+				<li>
+					<blockqoute>
+						<div class="wrap-scroll">
+							<p>Компания «Мастер Ванн» зарекомендовала себя как организация с высоким уровнем профессиональной подготовки специалистов и организации труда, а также своевременно и качественно выполняющая все задачи. Спасибо вам за прекрасную и стильную ванную!</p>
+						</div>
+					</blockqoute>
+
+					<address>
+						<div class="autor">Елизавета</div>
+						<div class="address">Рубинштейна, 16</div>
+					</address>
+				</li>
+
+				<li>
+					<blockqoute>
+						<div class="wrap-scroll">
+							<p>Сегодня закончился ремонт ванной комнаты! Я доволен, можно сказать в восторге! Весь процесс проходил очень быстро и качественно. Если честно, не ожидал такого качества выполнения работ. Очень рад, что обратился в «Мастер Ванн», всем рекомендую!</p>
+						</div>
+					</blockqoute>
+
+					<address>
+						<div class="autor">Игорь Викторович</div>
+						<div class="address">Тельмана, 28</div>
+					</address>
+				</li>
+
+				<li>
+					<blockqoute>
+						<div class="wrap-scroll">
+							<p>Компания «Мастер Ванн» зарекомендовала себя как организация с высоким уровнем профессиональной подготовки специалистов и организации труда, а также своевременно и качественно выполняющая все задачи. Спасибо вам за прекрасную и стильную ванную!</p>
+						</div>
+					</blockqoute>
+
+					<address>
+						<div class="autor">Елизавета</div>
+						<div class="address">Рубинштейна, 16</div>
+					</address>
+				</li>
+
+				<li>
+					<blockqoute>
+						<div class="wrap-scroll">
+							<p>Сегодня закончился ремонт ванной комнаты! Я доволен, можно сказать в восторге! Весь процесс проходил очень быстро и качественно. Если честно, не ожидал такого качества выполнения работ. Очень рад, что обратился в «Мастер Ванн», всем рекомендую!</p>
+						</div>
+					</blockqoute>
+
+					<address>
+						<div class="autor">Игорь Викторович</div>
+						<div class="address">Тельмана, 28</div>
+					</address>
+				</li>
+
+				<li>
+					<blockqoute>
+						<div class="wrap-scroll">
+							<p>Сегодня закончился ремонт ванной комнаты! Я доволен, можно сказать в восторге! Весь процесс проходил очень быстро и качественно. Если честно, не ожидал такого качества выполнения работ. Очень рад, что обратился в «Мастер Ванн», всем рекомендую!</p>
+						</div>
+					</blockqoute>
+
+					<address>
+						<div class="autor">Игорь Викторович</div>
+						<div class="address">Тельмана, 28</div>
+					</address>
+				</li>					
+				
+			</ul>
+		</div>
+	</section>	
+
+	<section class="b-gallery js-toScrollBlock" id="gallery">
+		<div class="container">
+			<h2>Фотогалерея наших работ</h2>
+
+			<div class="list">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/1.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/1.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/2.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/2.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/3.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/3.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/4.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/4.jpg">
+					</li>
+
+					<li>
+						<img src="media/img/b-gallery/1.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/1.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/2.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/2.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/3.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/3.jpg">
+					</li>
+
+					<li class="swiper-slide">
+						<img src="media/img/b-gallery/4.jpg" alt="photo" rel="group1" data-glisse-big="media/img/b-gallery/4.jpg">
+					</li>
+				</ul>
+				<div class="wrap-swiper_nav">
+					<div class="swiper-nav"></div>
+					<!-- <ul class='.swiper-pagination'>
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="b-form" id="b-form">
+		<div class="container">
+			<h2>Бесплатный вызов замерщика</h2>
+
+			<form action="" id="js-form">
+				<p class="p">Мастер <b>бесплатно</b> проведет необходимые замеры, а также выслушает<br>и учтет в смете все ваши пожелания.</p>
+				<div class="inputs">
+					<div class="b-input item">
+						<input class="required" id="name" name="name" type="text" placeholder="Ваше имя">
+						<svg width="300%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path>
+						</svg>
+					</div>
+					<div class="b-input item">
+						<input class="required" id="phone" name="phone" type="text" data-type="phone" placeholder="Телефон">
+						<svg width="300%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+							<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"></path>
+						</svg>
+					</div>
+					<button class="btn item"><span class="icon"></span><span class="text">Отправить</span></button>
+				</div>
+			</form>
+			<div class="send-block">
+				<p class="p">Ваш запрос отправлен.<br>В ближайшее время мы свяжемся с вами.</p>
+				<button class="btn">ОК</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="b-footer">
+		<div class="container">
+			<div class="address">
+				<p>© 2015 ООО «Мастер Ванн».<br>
+				Ремонт ванных комнат в Санкт-Петербурге<br>
+				По любым вопросам: <a class="link" href="mailto:hello@manes.ru">hello@manes.ru</a></p>
+			</div>
+
+			<div class="contact">
+				<p>
+					<b>Телефон: +7 812 493-24-95</b><br>
+					(ежедневно, с 9 до 23 часов)<br>
+					<button class="link modal__bind" data-number="1">Заказать обратный звонок</button>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-callback libribox" data-number="1">
+		<div class="modal__overlay"></div> 
+		<div class="modal__box">
+			<div class="modal__close"></div>
+			<form action="" method="post">				
+				<h2>Заказ обратного звонка</h2>
+
+				<div class="row-input">
+					<input type="text" name="name" placeholder="Имя" class="required">
+				</div>
+
+				<div class="row-input">
+					<input type="text" name="phone" placeholder="Ваш телефон" data-type="phone" class="required">
+				</div>
+
+				<button class="btn-warning">Заказать звонок</button>
+
+				<p class="info">
+					Мы перезвоним вам в течение 15 минут,<br>если вы оставили заявку с 9 до 23 часов.
+				</p>
+
+			</form>
+			<div class="send-block">
+				<h2>Спасибо!</h2>
+				<p>Ваша заявка принята.</p>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/veg3230.js"></script>
+	<script src="js/code/libriform.js"></script>
+	<script src="js/code/libriscroll.js"></script>
+	<script src="js/code/libribox.js"></script>
+	<script src="js/code/tadDl.js"></script>
+	<script src="js/code/app.js"></script>
+	<script src="js/code/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.carousel {
+	width: 100%;
+	overflow: hidden;
+
+	background-color: rgba(255,255,255,.15);
+
+	&__container {		
+		position: relative;
+		width: 2000em;
+		@extend .clfx;
+		
+		
+	}
+
+	&__item {
+		float: left;
+		width: 250px;
+		height: 146px;
+		padding: 20px;		
+
+		text-align: center;
+
+
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+	}	
+
+	&__nav {}
+
+	&__btn {
+
+		&_left {}
+
+		&_right {}
+
+	}
+
+}

@@ -1,16 +1,17 @@
 .works {
-	padding-top: 90px;
+	//transform: translateZ(0);
 
 	.container { 
-		
+		padding-top: 20px;
+		padding-bottom: 50px;
 	}
 
 	&__title {
-		color: #202020;
-		font-size: $fs-title;
+		
 	}
 
 	&__desc {
+		margin-bottom: 20px;
 
 		p {
 			font-size: $fs-text;
@@ -18,13 +19,17 @@
 	}
 
 	&__list {
-		margin: 0 0 0 -10px;
+		margin: 0 0 0 -30px;
 		@extend .clfx;
 		
 		.work {
-			float: left;
-			width: 300px;
-			margin-left: 20px;
+			float: left;			
+			width: 380px;
+			margin: 30px 0 0 30px;
+
+			&__img {
+				
+			}
 		}
 	}
 
