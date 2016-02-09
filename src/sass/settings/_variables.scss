@@ -9,16 +9,17 @@ $container-medium: 960px;
 $container-large: 1200px;   // defauld
 
 // for sizes media
-$max-width-xxsmall: 480px;
-$max-width-xsmall: 769px;
+$media-max-xs: 769px;
 
-$min-width-small: 770px;
-$max-width-small: 979px;
+$media-min-sm: 770px;
+$media-max-sm: 979px;
 
-$min-width-media: 1585px;
-$max-width-media: 1585px;
+$media-min-md: 1585px;
+$media-max-md: 1610px;
 
 $min-width-large: 1585px;
+
+
 
 //font-size
 $em: 16;

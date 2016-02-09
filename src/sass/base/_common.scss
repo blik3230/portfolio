@@ -59,19 +59,4 @@ body {
 .container {
 	width: $container-large;
 	margin: 0 auto;
-
-	@include media-xsmall{
-
-		width: auto;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-
-	@include media-small{
-		width: $container-small;
-	}	
-
-	@include media-large{
-		width: $container-large;
-	}		
 }
