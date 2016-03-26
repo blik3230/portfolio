@@ -27,6 +27,16 @@
 				color: $color-main;
 				font-weight: normal;
 				float: right;
+				background-image: linear-gradient(to bottom,$color-main 0,$color-main 100%);
+				background-size: 1px 1px;
+				background-repeat: repeat-x;
+				background-position: 0 90%;
+				text-shadow: 3px 0 #fff,2px 0 #fff,1px 0 #fff,-1px 0 #fff,-2px 0 #fff,-3px 0 #fff;
+
+				&:hover {
+					background-position: 0 100%;
+					background-image: linear-gradient(to bottom, transparent 0, transparent 100%);
+				}
 			}
 		}
 
